@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hesap Makinesi</title>
+</head>
+<body>
+    <!--
+        Kendi kodumdur. 
+    -->
+    <script>
+        alert("Mini hesap makinesi uygulamama hoşgeldiniz. Bu hesap makinesi kodlama sırasında iki sayı değeri ile oluşturulan nesneler ile çalışmaktadır.")
+        function hesapMakinesi(sayi1,sayi2){
+            this.sayi1 = sayi1;
+            this.sayi2 = sayi2;
+            this.toplama = toplama;
+            this.cikarma = cikarma;
+            this.carpma = carpma;
+            this.bolme = bolme;
+            this.kalan = kalan;
+            this.uslusu = uslusu;
+        } 
+        function toplama(){
+            var sonuc = this.sayi1 + this.sayi2;
+            return sonuc;
+        }
+        function cikarma(){
+            var sonuc = this.sayi1 - this.sayi2;
+            return sonuc;
+        } 
+        function carpma(){
+            var sonuc = this.sayi1 * this.sayi2;
+            return sonuc;
+        }
+        function bolme(){
+            if(this.sayi2 == 0){
+                document.write(this.sayi1+ " , " + this.sayi2 +" ile bölünemez.<br>");
+            }
+            else{
+                var sonuc = this.sayi1 / this.sayi2;
+                return sonuc;
+            }
+        }
+        function kalan(){
+            if(this.sayi2 == 0){
+                document.write(this.sayi1 + " , " + this.sayi2 + " ile bölünemez.<br>");
+            }
+            else{
+                var sonuc = this.sayi1 % this.sayi2;
+                return sonuc;
+            }
+        }
+        function uslusu(){
+            var sonuc  = this.sayi1 ** this.sayi2;
+            return sonuc;
+        }
+        var hm1 = new hesapMakinesi(5,3);
+        document.write(hm1.sayi1 + " ile " + hm1.sayi2 + " toplamı " + hm1.toplama() + " olur.<br>");
+        document.write(hm1.sayi1 + " ile " + hm1.sayi2 + " farkı " + hm1.cikarma() + " olur.<br> ");
+        document.write(hm1.sayi1 + " ile " + hm1.sayi2 + " carpimi " + hm1.carpma() + " olur.<br>");
+        document.write(hm1.sayi1 + " ile " + hm1.sayi2 + " bolumu " + hm1.bolme() + " olur.<br>");
+        document.write(hm1.sayi1 + " ile " + hm1.sayi2 + " bolumunden kalan " + hm1.kalan() + " olur.<br>");
+        document.write(hm1.sayi1 + " üzeri " + hm1.sayi2 + " sonucu " + hm1.uslusu() + " olur.<br>");
+    </script>
+</body>
+</html>

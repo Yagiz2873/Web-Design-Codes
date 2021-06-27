@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <style>
+        body{
+            background-image: linear-gradient(to bottom right,white,wheat,rgb(70, 197, 240),blue,blueviolet,black);
+        }
+        .f1{
+            border: 5px solid black;
+            height: 500px;
+            width: 50%;
+            background-color: white;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+            padding-top: 20px;
+            padding-bottom: 200px;
+        }
+        .baslik{
+            text-align: center;
+            font-size: 30px;
+            color: black;
+
+        }
+        .f1>form{
+            text-align: center;
+            line-height: 33px;
+        }
+        .t1,.t2,.t3,.t4,.t5{
+            text-align: center;
+            border: 3px solid black;
+            background-color: whitesmoke;
+        }
+        .t4{
+            width: 45%;
+        }
+        .t5{
+            width: 45%;
+        }
+        .s1,.s2{
+            border: 3px solid black; 
+        }
+        form>div{
+            border: 3px solid black; 
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+        .d1,.d2,.d3{
+            background-color: whitesmoke;
+        }
+        @media screen and (max-width:1400px){
+            .f1{
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            form>.sub1{
+                position: relative;
+                bottom: 20px;
+            }
+            .t4,.t5{
+                width: 66%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <script>
+        alert("Yağız Esmerligil ile alakalı araştırma formu uygulamasına hoşgeldiniz.Bu formda Yağız Esmerligil adlı yazılımcıyla ilgilenen ve tanışmış kişiler ile alakalı istatiksel bilgi toplanması amaçlanmıştır.")
+    </script>
+    <div class="baslik">ANKET FORMU</div>
+    <div class="f1">
+        
+        <form action="https://www.google.com.tr" method="GET">
+            <input class="t1" type="text" placeholder="İsminizi Giriniz...">
+            <br>
+            <br>
+            <input class="t2" type="text" placeholder="Soyadınızı Giriniz...">
+            <br>
+            <br>
+            <input class="t3" type="text" placeholder="Yaşınızı Giriniz...">
+            <br>
+            <br>
+            <input class="t4" type="text" placeholder="Yağız Esmerligil'in favoriniz olan çalışmasını giriniz...">
+            <br>
+            <br>
+            <input class="t5" type="text" placeholder="Üzerinde çalışma yaptığınız alanı giriniz...">
+            <br>
+            <br>
+            <div class="d1">
+                Cinsiyetiniz:
+            <input class="r1" type="radio" name="gender"> Erkek
+            <input class="r1" type="radio" name="gender">Kadın
+            </div>
+            
+            <br>
+            <br>
+            <div class="d2">
+                Meslek Durumunuz: 
+                <select class="s1" name="meslek" id="meslek">
+                    <option value="belirtilmedi">Belirtiniz</option>
+                    <option value="ogrenci">Öğrenci</option>
+                    <option value="calisiyor">Çalışıyor</option>
+                    <option value="calismiyor">Çalışmıyor</option>
+                    <option value="emekli">Emekli</option>
+                </select>
+            </div>
+            <br>
+            <br>
+            <div class="d3">
+                Yağız Esmerligil'i tavsiye eder misiniz?
+            <select class="s2" name="meslek" id="meslek">
+                <option value="belirtilmedi">Belirtiniz</option>
+                <option value="evet">Evet</option>
+                <option value="hayır">Hayır</option>
+                <option value="kısmen">Kısmen</option>
+            </select>
+            </div>
+            
+            <br>
+            <br>
+            <input class="sub1" type="submit">
+
+
+
+
+        </form>
+    </div>
+    
+</body>
+</html>
